@@ -9,7 +9,7 @@
 {% block content %}
     {% for i in list %}
     <div class="post">
-        <h2>{{i.title}}</h2>
+        <h2><a href="{% url 'post_detail' pk=i.pk %}">{{ i.title }}</a></h2>
         <p>{{i.description}}
         </p>    
         <small>{{i.published_date}}</small>
