@@ -10,7 +10,7 @@
     {% for i in list %}
     <div class="post">
         <hr>
-        <h2><a href="{% url 'add' pk=i.pk %}">{{ i.title }}</a></h2>
+        <h2><a href="{% url 'detail' pk=i.pk %}">{{ i.title }}</a></h2>
         <p class="text">{{i.text}}
         </p>    
         <small><b>Publication date:</b>{{i.published_date}}</small>

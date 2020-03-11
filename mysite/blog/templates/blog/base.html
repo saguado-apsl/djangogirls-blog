@@ -15,11 +15,13 @@
             <a class="nav-brand"><img src="{% static 'img/djangogirls.png' %}" width="150" height=100 class="rounded-circle d-inline-block align-top" alt=""></a>
             &nbsp;&nbsp;&nbsp;
             <h1 class="nav-brand">Posts list</h1>
-            &nbsp;&nbsp;&nbsp;<a href="/post/add/">
-            <button type="button" class="btn btn-primary nav-link pr-2 pl-2">
-                <i class="fas fa-plus"></i> Add Post            
-            </button>
-        </a>
+            &nbsp;&nbsp;&nbsp;
+            
+            <div class="btn-group" role="group">
+                <a href="/post_list/"><button type="button" class="btn btn-secondary">List</button> </a>
+                &nbsp;&nbsp;
+                <a href="/post/add/"><button type="button" class="btn btn-secondary">Add</button> </a>
+            </div>
         </nav>
     </header>
 

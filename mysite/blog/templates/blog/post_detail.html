@@ -14,10 +14,15 @@ Detail {{post|truncatewords:2}}
             </div>
             <small class="d-flex flex-row-reverse">{{ post.autor }} <b>&nbsp;User: </b></small>
         {% endif %}
+        <hr>
         <div class="row">
+        
         <h2>{{ post.title }}</h2>
         </div>
         <p>{{ post.text|linebreaksbr }}</p>
-        <a class="btn btn-default" href="{% url 'edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        <hr>
+        
+        <a class="btn btn-primary" href="{% url 'edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil">Edit</span></a>
+        <a class="btn btn-primary" href="{% url 'delete' pk=post.pk %}"><span class="glyphicon glyphicon-cube">Delete</span></a>
     </div>
 {% endblock %}
