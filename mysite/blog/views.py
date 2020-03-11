@@ -32,3 +32,8 @@ def add_post(request):
     else:
         form = PostForm()
     return render(request, 'add.html', {'form': form})
+
+
+def edit_post():
+
+    return render(request, 'edit.html')
